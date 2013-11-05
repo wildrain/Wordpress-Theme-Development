@@ -1,0 +1,374 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Adaptive WordPress Theme 1.0\n"
+"POT-Creation-Date: 2012-09-16 20:01+0200\n"
+"PO-Revision-Date: 2012-09-16 20:02+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.3\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: author.php:19
+msgid "Posts written by: "
+msgstr ""
+
+#: author.php:32 category.php:28 index.php:18 single.php:68 tag.php:28
+msgid "No posts were found."
+msgstr ""
+
+#: author.php:39 category.php:35 index.php:25
+msgid "Newer Posts &raquo;"
+msgstr ""
+
+#: author.php:40 category.php:36 index.php:26
+msgid "&laquo; Older Posts"
+msgstr ""
+
+#: category.php:15
+msgid "Showing posts from: "
+msgstr ""
+
+#: comments.php:7
+msgid "You cannot access this page directly."
+msgstr ""
+
+#: comments.php:16
+msgid ""
+"This post is password protected. Enter the password to view the comments."
+msgstr ""
+
+#: comments.php:28
+msgid "No Comments"
+msgstr ""
+
+#: comments.php:28
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:28
+msgid "% Comments"
+msgstr ""
+
+#: comments.php:38
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:39
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:61
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:61
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: comments.php:67
+msgid "You must be logged in to post a comment"
+msgstr ""
+
+#: comments.php:67
+msgid "Log In"
+msgstr ""
+
+#: comments.php:74
+msgid "Logged in as"
+msgstr ""
+
+#: comments.php:74
+msgid "Log out"
+msgstr ""
+
+#: comments.php:80 page-contact.php:134
+msgid "Name"
+msgstr ""
+
+#: comments.php:80 comments.php:85 page-contact.php:134 page-contact.php:139
+msgid "(required)"
+msgstr ""
+
+#: comments.php:85 page-contact.php:139
+msgid "Email"
+msgstr ""
+
+#: comments.php:85
+msgid "(never published) "
+msgstr ""
+
+#: comments.php:90 page-contact.php:144
+msgid "Website"
+msgstr ""
+
+#: comments.php:101
+msgid "Allowed Tags"
+msgstr ""
+
+#: comments.php:106
+msgid "Submit Comment"
+msgstr ""
+
+#: comments.php:117
+msgid "The comments are closed."
+msgstr ""
+
+#: footer.php:31
+msgid "Go To Top"
+msgstr ""
+
+#: footer.php:32
+msgid "All rights reserved"
+msgstr ""
+
+#: footer.php:33
+msgid "Powered by"
+msgstr ""
+
+#: functions.php:57
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:58
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:88
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:90
+msgid "The main sidebar area"
+msgstr ""
+
+#: functions.php:99
+msgid "Left Footer"
+msgstr ""
+
+#: functions.php:101
+msgid "The left footer area"
+msgstr ""
+
+#: functions.php:110
+msgid "Right Footer"
+msgstr ""
+
+#: functions.php:112
+msgid "The right footer area"
+msgstr ""
+
+#: functions.php:133
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:144
+msgid "AUTHOR"
+msgstr ""
+
+#: functions.php:162
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: page-archives.php:22 page-contact.php:104 page-full-width.php:24
+#: page.php:18
+msgid "Edit This"
+msgstr ""
+
+#: page-contact.php:115
+msgid "Success!"
+msgstr ""
+
+#: page-contact.php:116
+msgid ""
+"You have successfully sent the message. We will get back to you as soon as "
+"possible."
+msgstr ""
+
+#: page-contact.php:120
+msgid "There was an error!"
+msgstr ""
+
+#: page-contact.php:121
+msgid ""
+"Unfortunatelly, we couldn't send the email at this time. Please try again."
+msgstr ""
+
+#: page-contact.php:153
+msgid "Send Message"
+msgstr ""
+
+#: page-contact.php:163 page-full-width.php:40 page.php:37
+msgid "No page was found."
+msgstr ""
+
+#: search.php:28
+msgid "No result were found matching your criteria. Please try something else."
+msgstr ""
+
+#: single.php:29
+msgid "Edit This Post"
+msgstr ""
+
+#: tag.php:15
+msgid "Tag archives for: "
+msgstr ""
+
+#: plugins/theme-options.php:29
+msgid " Theme Options"
+msgstr ""
+
+#: plugins/theme-options.php:35
+msgid "Options saved!"
+msgstr ""
+
+#: plugins/theme-options.php:47
+msgid "Logo:"
+msgstr ""
+
+#: plugins/theme-options.php:50
+msgid ""
+"Upload your logo with the Media Uploader and then paste the url in this box."
+msgstr ""
+
+#: plugins/theme-options.php:55
+msgid "Google Analytics Code:"
+msgstr ""
+
+#: plugins/theme-options.php:58
+msgid "Copy your Google Analytics Code in this box."
+msgstr ""
+
+#: plugins/theme-options.php:63
+msgid "Display Top Ad?"
+msgstr ""
+
+#: plugins/theme-options.php:70
+msgid "Top Ad Image:"
+msgstr ""
+
+#: plugins/theme-options.php:73
+msgid ""
+"Upload your image with the Media Uploader and then paste the url in this box."
+msgstr ""
+
+#: plugins/theme-options.php:78
+msgid "Top Ad Link:"
+msgstr ""
+
+#: plugins/theme-options.php:81
+msgid "Specify the link for your ad."
+msgstr ""
+
+#: plugins/theme-options.php:86
+msgid "Contact Form Email Address:"
+msgstr ""
+
+#: plugins/theme-options.php:89
+msgid ""
+"Enter the email address where you want to receive the contact form messages. "
+"Leave blank if you want to use the WordPress admin email."
+msgstr ""
+
+#: plugins/theme-options.php:96
+msgid "Save Changes"
+msgstr ""
+
+#: plugins/widget-ad-125.php:12
+msgid "Displays a list of four 125x125 ad blocks"
+msgstr ""
+
+#: plugins/widget-ad-125.php:18
+msgid "Ads"
+msgstr ""
+
+#: plugins/widget-ad-125.php:34 plugins/widget-ad-260.php:28
+#: plugins/widget-adaptive-social.php:39 plugins/widget-video.php:28
+msgid "Title:"
+msgstr ""
+
+#: plugins/widget-ad-125.php:40
+msgid "Ad 1 image URL:"
+msgstr ""
+
+#: plugins/widget-ad-125.php:46
+msgid "Ad 1 link:"
+msgstr ""
+
+#: plugins/widget-ad-125.php:52
+msgid "Ad 2 image URL:"
+msgstr ""
+
+#: plugins/widget-ad-125.php:58
+msgid "Ad 2 link:"
+msgstr ""
+
+#: plugins/widget-ad-125.php:64
+msgid "Ad 3 image URL:"
+msgstr ""
+
+#: plugins/widget-ad-125.php:70
+msgid "Ad 3 link:"
+msgstr ""
+
+#: plugins/widget-ad-125.php:76
+msgid "Ad 4 image URL:"
+msgstr ""
+
+#: plugins/widget-ad-125.php:82
+msgid "Ad 4 link:"
+msgstr ""
+
+#: plugins/widget-ad-260.php:12
+msgid "Displays a single 260x120 ad block"
+msgstr ""
+
+#: plugins/widget-ad-260.php:18
+msgid "Ad"
+msgstr ""
+
+#: plugins/widget-ad-260.php:34
+msgid "Ad image URL:"
+msgstr ""
+
+#: plugins/widget-ad-260.php:40
+msgid "Ad link:"
+msgstr ""
+
+#: plugins/widget-adaptive-social.php:12
+msgid "Displays a list of social icons"
+msgstr ""
+
+#: plugins/widget-adaptive-social.php:18
+msgid "Connect"
+msgstr ""
+
+#: plugins/widget-adaptive-social.php:31
+msgid "Connect with us on our social networks."
+msgstr ""
+
+#: plugins/widget-adaptive-social.php:45
+msgid "Description:"
+msgstr ""
+
+#: plugins/widget-video.php:12
+msgid "Displays an embeddable video"
+msgstr ""
+
+#: plugins/widget-video.php:18
+msgid "Video"
+msgstr ""
+
+#: plugins/widget-video.php:34
+msgid "Video Embed Code:"
+msgstr ""
+
+#: plugins/widget-video.php:40
+msgid "Video Description:"
+msgstr ""

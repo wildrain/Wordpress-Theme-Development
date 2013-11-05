@@ -1,0 +1,125 @@
+/*
+	Theme Name: Pixxmark-forum
+	Theme URI:	http://www.pixxmark.net
+	Description: forum for the pixxmark site
+	Version: 1.0
+	Author:	the pixxmark team
+	Author URI: http://www.pixxmark.net
+	Tags: black, blue, white, two-columns, flexible-width, threaded-comments, translation-ready, custom-menu
+
+*/
+
+@import url("css/bootstrap.css");
+@import url("css/master.css");
+@import url("css/bbpress.css");
+@import url("css/bbpress_r.css");
+@import url("css/typography.css");
+
+
+
+/*************************************************
+jquery tabs
+*************************************************/
+#tabbed-reviews a {
+	font-family:Arial, Helvetica, sans-serif;
+}
+#tabbed-reviews a:hover {
+	text-decoration:none;
+}
+ul.tabnav {
+	margin:0px !important;
+	padding:0px !important;
+}
+ul.tabnav li {
+	display: inline;
+	list-style: none;
+}
+ul.tabnav li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #444;
+	font-weight: bold;
+	display:inline-block;
+	padding: 5px 9px 6px 9px;
+	outline: none;
+	font-size:.8em;
+}
+ul.tabnav li a:hover, ul.tabnav li a:active, ul.tabnav li.ui-tabs-selected a {
+	color:#FFF;
+	background:url(images/sidebar-header-bg.png) repeat-x 0px 0px;	
+}
+.tabdiv-wrapper {
+	border:1px solid #CCC;
+	margin-bottom:20px;
+}
+.tabdiv {
+	background: #E8E8E8;
+	border:1px solid #FFF;
+	border-top:0px;
+	font-size:1em;
+}
+.tabdiv ul {
+	margin:0px !important;
+}
+.tabdiv li {
+	list-style-type:none;
+	list-style-image: none !important;	
+}
+.tabdiv li a {
+	display:block;
+	padding:10px 10px;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #fff;
+	color:#444;
+
+}
+.tabdiv li a:hover {
+	background:#F0F0F0;
+	color:#222;
+}
+.tabdiv li.last a {
+	text-align:center;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#666;
+	font-size:1em;
+	padding:2px 0px 2px 0px;
+	border-bottom:0px;
+}
+.ui-tabs-hide {
+	display: none;
+}
+
+/*stars*/
+.tabdiv .stars {
+	float:right;
+	margin-top:3px;
+}
+.tabdiv .stars {
+	margin:10px 5px 0px 0px !important;
+}
+.tabdiv .star {
+	width:14px;
+	height:14px;
+	float:left;
+	margin-left:2px;
+	background:url(images/star-empty-small.png) no-repeat 0px 0px;
+}
+.tabdiv .star.half {
+	background:url(images/star-half-small.png) no-repeat 0px 0px;
+}
+.tabdiv .star.full {
+	background:url(images/star-full-small.png) no-repeat 0px 0px;
+}
+
+.tabdiv li .r-image{
+	float: left;	
+}
+
+.tabdiv li .text-content a{
+	border-bottom: 0px; 	
+}
+
+/*bootsrap.css*/
+
+
