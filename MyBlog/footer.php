@@ -23,7 +23,7 @@
 			
 			<div class="container">
 			
-				<p class="top-link-footer"><a href="<?php home_url(); ?>"><?php _e('Go to the top','adaptive-framework') ?></a></p>
+				<p class="top-link-footer"><a href="<?php home_url(); ?>"><?php _e('Go to the top','wildrain-blog') ?></a></p>
 				<p>&copy <?php echo date('Y'); ?> <a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a> </p>
 			
 			</div> <!-- end container -->

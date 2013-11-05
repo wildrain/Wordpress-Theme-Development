@@ -31,7 +31,7 @@
 						<hr class="image-replacement"></hr>
 
 
-						<h1><?php _e('Archives by month','adaptive-framework'); ?></h1>
+						<h1><?php _e('Archives by month','wildrain-blog'); ?></h1>
 							<ul>
 								<?php wp_get_archives('type=monthly'); ?>
 							</ul>
@@ -39,7 +39,7 @@
 						
 						<hr class="image-replacement"></hr>	
 
-						<h1><?php _e('Archives by Subject','adaptive-framework'); ?></h1>
+						<h1><?php _e('Archives by Subject','wildrain-blog'); ?></h1>
 							<ul>
 								<?php wp_list_categories('title_li='); ?> 
 							</ul>

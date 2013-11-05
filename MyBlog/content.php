@@ -15,7 +15,7 @@
 				</figure>
 			<?php endif; ?>
 			
-			<?php the_content('read more &raquo','adaptive-framework'); ?>
+			<?php the_content('read more &raquo','wildrain-blog'); ?>
 		</div>
 
 

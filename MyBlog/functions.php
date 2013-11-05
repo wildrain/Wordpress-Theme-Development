@@ -12,7 +12,7 @@ define('IMAGES',THEMEROOT.'/images');
 function register_my_menus(){
 	register_nav_menus(
 		array(			
-			'main-menu' => __('Main Menu', 'adaptive-framework')
+			'main-menu' => __('Main Menu', 'wildrain-blog')
 		)
 	);
 }
@@ -25,9 +25,9 @@ add_action('init', 'register_my_menus');
 if (function_exists('register_sidebar')) {
 	register_sidebar(
 		array(
-			'name'=>__('Main sidebar','adaptive-framework'),
+			'name'=>__('Main sidebar','wildrain-blog'),
 			'id'=>'main-sidebar',
-			'description'=>__('this is main side bar','adaptive-framework'),
+			'description'=>__('this is main side bar','wildrain-blog'),
 			'before_widget'=>'<div class="sidebar-widget">',
 			'after_widget'=>'</div>',
 			'before_title'=>'<h4>',
@@ -37,10 +37,10 @@ if (function_exists('register_sidebar')) {
 
 	register_sidebar(
 		array(
-			'name'=>__('Left Footer','adaptive-framework'),
+			'name'=>__('Left Footer','wildrain-blog'),
 			'id'=>'left-footer',
-			'description'=>__('this is left footer side bar','adaptive-framework'),
-			'before_widget'=>'<div class="footer-sidebar-widget span3">',
+			'description'=>__('this is left footer side bar','wildrain-blog'),
+			'before_widget'=>'<div class="footer-sidebar-widget col-lg-3">',
 			'after_widget'=>'</div>',
 			'before_title'=>'<h4>',
 			'after_title'=>'</h4>'
@@ -49,10 +49,10 @@ if (function_exists('register_sidebar')) {
 
 	register_sidebar(
 		array(
-			'name'=>__('Right Footer','adaptive-framework'),
+			'name'=>__('Right Footer','wildrain-blog'),
 			'id'=>'right-footer',
-			'description'=>__('this is right footer side bar','adaptive-framework'),
-			'before_widget'=>'<div class="footer-sidebar-widget span6">',
+			'description'=>__('this is right footer side bar','wildrain-blog'),
+			'before_widget'=>'<div class="footer-sidebar-widget col-lg-6">',
 			'after_widget'=>'</div>',
 			'before_title'=>'<h4>',
 			'after_title'=>'</h4>'
@@ -71,7 +71,7 @@ if (function_exists('add_theme_support')) {
 
 //comments area
 
-function adaptive_comments($comment, $args, $depth) {
+function wildrain_comments($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment;
 
 
@@ -82,7 +82,7 @@ function adaptive_comments($comment, $args, $depth) {
 		<li class="pingback" id="comment-<?php comment-ID(); ?>">
 			<article <?php comment_class('clearfix'); ?>>
 				<header>
-					<h5><?php _e('Pingback','adaptive-framework'); ?></h5>
+					<h5><?php _e('Pingback','wildrain-blog'); ?></h5>
 					<p><?php edit_comment_link(); ?></p>
 				</header>
 					
@@ -118,7 +118,7 @@ function adaptive_comments($comment, $args, $depth) {
 				
 
 				<?php if($comment->comment_approved == 0): ?>
-				<p class="awaiting-moderation"><?php _e('your comment is awaiting for moderation','adaptive-framework') ?></p>
+				<p class="awaiting-moderation"><?php _e('your comment is awaiting for moderation','wildrain-blog') ?></p>
 				<?php endif; ?>
 
 
@@ -133,7 +133,7 @@ function adaptive_comments($comment, $args, $depth) {
 // coustom comment form 
 
 
-function adaptive_custom_comment_form($defaults){
+function wildrain_custom_comment_form($defaults){
 	$defaults['comment_notes_before'] = '' ;
 	$defaults['id_form'] = 'comment-form';
 	$defaults['comment_field'] = '<p><textarea name="comment" id="comment" cols="30" rows="10"></textarea></p>';
@@ -141,10 +141,10 @@ function adaptive_custom_comment_form($defaults){
 	return $defaults;
 
 }
-add_filter('comment_form_defaults','adaptive_custom_comment_form');
+add_filter('comment_form_defaults','wildrain_custom_comment_form');
 
 
-function adaptive_custom_comment_fields() {
+function wildrain_custom_comment_fields() {
 	$commenter = wp_get_current_commenter();
 	$req = get_option('require_name_email');
 	$aria_req = ($req ? " aria-required='true'" : '');
@@ -152,15 +152,15 @@ function adaptive_custom_comment_fields() {
 	$fields = array(
 		'author' => '<p>'.
 						'<input type="text" name="author" id="author" value=" '. esc_attr($commenter['comment_author']) .'"  '. $aria_req .' />'.
-						'<label for="author">'.  __('Name','adaptive-framework'). '' . ($req ? '*':'') .'</label>'.
+						'<label for="author">'.  __('Name','wildrain-blog'). '' . ($req ? '*':'') .'</label>'.
 					'</p>',	
 		'email' => '<p>'.
 						'<input type="text" name="email" id="email" value=" '. esc_attr($commenter['comment_author_email']) .'"  '. $aria_req .' />'.
-						'<label for="email">'.  __('Email','adaptive-framework'). '' . ($req ? '*':'') .'</label>'.
+						'<label for="email">'.  __('Email','wildrain-blog'). '' . ($req ? '*':'') .'</label>'.
 					'</p>',
 		'url' => '<p>' . 
 						'<input id="url" name="url" type="text" value="' . esc_attr($commenter['comment_author_url']) . '" />' .
-						'<label for="url">' . __('Website', 'adaptive-framework') . '</label>' .
+						'<label for="url">' . __('Website', 'wildrain-blog') . '</label>' .
 		            '</p>'		
 
 	);
@@ -168,7 +168,7 @@ function adaptive_custom_comment_fields() {
 	return $fields;
 }
 
-add_filter('comment_form_default_fields', 'adaptive_custom_comment_fields');
+add_filter('comment_form_default_fields', 'wildrain_custom_comment_fields');
 
 
 
@@ -706,15 +706,15 @@ function create_roman_movie_review(){
     register_post_type('roman_movie_review',array(
 
         'labels'=>array(
-                    'name'=>__('Movie Reviews','adaptive-framework'),
-                    'singular_name'=>__('Movie Review','adaptive-framework'),
-                    'add_new'=>__('Add New Review','adaptive-framework'),
-                    'edit_item'=>__('Edit Review','adaptive-framework'),
-                    'new_item'=>__('Add Review','adaptive-framework'),
-                    'view_item'=>__('View Review','adaptive-framework'),
-                    'search_items'=>__('Search Review','adaptive-framework'),
-                    'not_found'=>__('Not Found Review','adaptive-framework'),
-                    'not_found_in_trash' => __('No reviews found in Trash', 'adaptive-framework') 
+                    'name'=>__('Movie Reviews','wildrain-blog'),
+                    'singular_name'=>__('Movie Review','wildrain-blog'),
+                    'add_new'=>__('Add New Review','wildrain-blog'),
+                    'edit_item'=>__('Edit Review','wildrain-blog'),
+                    'new_item'=>__('Add Review','wildrain-blog'),
+                    'view_item'=>__('View Review','wildrain-blog'),
+                    'search_items'=>__('Search Review','wildrain-blog'),
+                    'not_found'=>__('Not Found Review','wildrain-blog'),
+                    'not_found_in_trash' => __('No reviews found in Trash', 'wildrain-blog') 
             ),
         'public'=>true,
         'menu_position'=>25,
@@ -742,15 +742,15 @@ function create_roman_music_review(){
     register_post_type('roman_music_review',array(
 
         'labels'=>array(
-                    'name'=>__('Music Reviews','adaptive-framework'),
-                    'singular_name'=>__('Music Review','adaptive-framework'),
-                    'add_new'=>__('Add New Review','adaptive-framework'),
-                    'edit_item'=>__('Edit Review','adaptive-framework'),
-                    'new_item'=>__('Add Review','adaptive-framework'),
-                    'view_item'=>__('View Review','adaptive-framework'),
-                    'search_items'=>__('Search Review','adaptive-framework'),
-                    'not_found'=>__('Not Found Review','adaptive-framework'),
-                    'not_found_in_trash' => __('No reviews found in Trash', 'adaptive-framework') 
+                    'name'=>__('Music Reviews','wildrain-blog'),
+                    'singular_name'=>__('Music Review','wildrain-blog'),
+                    'add_new'=>__('Add New Review','wildrain-blog'),
+                    'edit_item'=>__('Edit Review','wildrain-blog'),
+                    'new_item'=>__('Add Review','wildrain-blog'),
+                    'view_item'=>__('View Review','wildrain-blog'),
+                    'search_items'=>__('Search Review','wildrain-blog'),
+                    'not_found'=>__('Not Found Review','wildrain-blog'),
+                    'not_found_in_trash' => __('No reviews found in Trash', 'wildrain-blog') 
             ),
         'public'=>true,
         'menu_position'=>26,
@@ -802,15 +802,15 @@ function create_roman_game_review(){
     register_post_type('roman_game_review',array(
 
         'labels'=>array(
-                    'name'=>__('Game Reviews','adaptive-framework'),
-                    'singular_name'=>__('Game Review','adaptive-framework'),
-                    'add_new'=>__('Add New Review','adaptive-framework'),
-                    'edit_item'=>__('Edit Review','adaptive-framework'),
-                    'new_item'=>__('Add Review','adaptive-framework'),
-                    'view_item'=>__('View Review','adaptive-framework'),
-                    'search_items'=>__('Search Review','adaptive-framework'),
-                    'not_found'=>__('Not Found Review','adaptive-framework'),
-                    'not_found_in_trash' => __('No reviews found in Trash', 'adaptive-framework') 
+                    'name'=>__('Game Reviews','wildrain-blog'),
+                    'singular_name'=>__('Game Review','wildrain-blog'),
+                    'add_new'=>__('Add New Review','wildrain-blog'),
+                    'edit_item'=>__('Edit Review','wildrain-blog'),
+                    'new_item'=>__('Add Review','wildrain-blog'),
+                    'view_item'=>__('View Review','wildrain-blog'),
+                    'search_items'=>__('Search Review','wildrain-blog'),
+                    'not_found'=>__('Not Found Review','wildrain-blog'),
+                    'not_found_in_trash' => __('No reviews found in Trash', 'wildrain-blog') 
             ),
         'public'=>true,
         'menu_position'=>27,

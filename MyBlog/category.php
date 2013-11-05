@@ -11,7 +11,7 @@
 					<?php if (have_posts()) : ?>
 
 						<div class="additional-content">
-							<h1> <?php single_cat_title('Showing result for : ','adaptive-framework',true); ?></h1>
+							<h1> <?php single_cat_title('Showing result for : ','wildrain-blog',true); ?></h1>
 							<hr class="fancy-hr" />
 						</div>
 
@@ -23,7 +23,7 @@
 					<?php endwhile; else : ?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class('no-posts'); ?>>
 
-							<h1><?php _e('No category  is found ! please try somethign else ', 'adaptive-framework'); ?></h1>
+							<h1><?php _e('No category  is found ! please try somethign else ', 'wildrain-blog'); ?></h1>
 							
 						</article>
 						
@@ -31,8 +31,8 @@
 					
 					<div class="article-nav clearfix">
 					
-						<p class="article-nav-next"><?php previous_posts_link(__('Newer Posts &raquo;', 'adaptive-framework')); ?></p>
-						<p class="article-nav-prev"><?php next_posts_link(__('&laquo; Older Posts', 'adaptive-framework')); ?></p>
+						<p class="article-nav-next"><?php previous_posts_link(__('Newer Posts &raquo;', 'wildrain-blog')); ?></p>
+						<p class="article-nav-prev"><?php next_posts_link(__('&laquo; Older Posts', 'wildrain-blog')); ?></p>
 					
 					</div> <!-- end clearfix -->
 					

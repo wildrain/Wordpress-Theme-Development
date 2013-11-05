@@ -2,7 +2,7 @@
 
 	<div class="sidebar-widget">
 					
-		 <h4><?php _e('Search','adaptive-framework') ?></h4>
+		 <h4><?php _e('Search','wildrain-blog') ?></h4>
 		 
 		 <?php get_search_form(); ?>
 		

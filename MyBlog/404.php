@@ -21,7 +21,7 @@
 						<header>
 							
 							
-							<h1><?php _e('Page Not Found','adaptive-framework'); ?></h1>
+							<h1><?php _e('Page Not Found','wildrain-blog'); ?></h1>
 							
 							
 							
@@ -29,7 +29,7 @@
 						
 						<hr class="image-replacement"></hr>
 						
-						<?php _e('Ooops it seems your are looking for something is\'t here .Please try another ','adaptive-framework'); ?>
+						<?php _e('Ooops it seems your are looking for something is\'t here .Please try another ','wildrain-blog'); ?>
 						<hr class="image-replacement"></hr>
 						<?php get_search_form(); ?>
 						<hr class="image-replacement"></hr>

@@ -107,12 +107,12 @@
 
 
 					   	<?php if(isset($email_send) && $email_send==true): ?>
-					   		<h3><?php _e('Sucess!','adaptive-framework'); ?> </h3>
-					   		<p><?php _e('you successfully send the mail','adaptive-framework'); ?> </p>
+					   		<h3><?php _e('Sucess!','wildrain-blog'); ?> </h3>
+					   		<p><?php _e('you successfully send the mail','wildrain-blog'); ?> </p>
 
 					   	<?php elseif(isset($email_send_error) && $email_send_error==true): ?>
-					   		<h3><?php _e('Error!','adaptive-framework'); ?> </h3>
-					   		<p><?php _e('you have encounter an error please try again','adaptive-framework'); ?> </p>
+					   		<h3><?php _e('Error!','wildrain-blog'); ?> </h3>
+					   		<p><?php _e('you have encounter an error please try again','wildrain-blog'); ?> </p>
 
 						<?php else: ?>
 							

@@ -15,7 +15,7 @@
 					<?php endwhile; else : ?>
 						<article class="blog-post" id="post-<?php the_ID(); ?>" <?php post_class('no-posts'); ?>>
 
-							<h1><?php _e('No posts were found.', 'adaptive-framework'); ?></h1>
+							<h1><?php _e('No posts were found.', 'wildrain-blog'); ?></h1>
 							
 						</article>
 						
@@ -23,8 +23,8 @@
 					
 					<div class="article-nav clearfix">
 					
-						<p class="article-nav-next"><?php previous_posts_link(__('Newer Posts &raquo;', 'adaptive-framework')); ?></p>
-						<p class="article-nav-prev"><?php next_posts_link(__('&laquo; Older Posts', 'adaptive-framework')); ?></p>
+						<p class="article-nav-next"><?php previous_posts_link(__('Newer Posts &raquo;', 'wildrain-blog')); ?></p>
+						<p class="article-nav-prev"><?php next_posts_link(__('&laquo; Older Posts', 'wildrain-blog')); ?></p>
 					
 					</div> <!-- end clearfix -->
 					

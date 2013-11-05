@@ -14,7 +14,7 @@
 			if (get_the_title() != '') : ?>
 				<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 			<?php else : ?>
-				<a href="<?php the_permalink(); ?>"><?php _e('Permalink to the post', 'adaptive-framework'); ?></a>
+				<a href="<?php the_permalink(); ?>"><?php _e('Permalink to the post', 'wildrain-blog'); ?></a>
 			<?php endif; 
 			
 			$gallery_atts = array(
@@ -34,7 +34,7 @@
 				<a href="<?php the_permalink(); ?>"><?php echo $display_first_image; ?></a>
 			</figure>
 			
-			<p><strong><?php printf(_n('This gallery contains %s photo.', 'This gallery contains %s photos.', $gallery_count, 'adaptive-framework'), $gallery_count); ?></strong></p>
+			<p><strong><?php printf(_n('This gallery contains %s photo.', 'This gallery contains %s photos.', $gallery_count, 'wildrain-blog'), $gallery_count); ?></strong></p>
 			
 			<?php }
 			
